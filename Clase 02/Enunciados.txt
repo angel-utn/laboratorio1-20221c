@@ -1,0 +1,16 @@
+1) Dado un número entero que se ingresa por teclado, determinar si el número es positivo, negativo o cero.
+
+2) Un cine dispone de una tarifa normal de $900 y las siguientes promociones:
+  - Niños con edad menor a 10 y adultos mayores a 70: 30% de descuento
+  - Adultos con edad entre 20 y 30 (ambos inclusive): 10% de descuento.
+  Dada la edad del cliente. Calcular el valor de la entrada.
+
+3) Un negocio dispone de tres formas de pago distintas y cada una de ellas dispone
+  de descuentos o recargos.
+  - 'E' Efectivo : 20% de descuento
+  - 'T' Tarjeta : 40% de recargo
+  - 'Q' QR: 50% de descuento si el monto es mayor a $10000.
+  Dada la cantidad de unidades vendidas, el precio unitario y la forma de pago.
+  Calcular e informar el importe neto a pagar.
+
+4) Dados cinco números enteros que se ingresan por teclado. Calcular e informar cuántos de ellos son negativos.
