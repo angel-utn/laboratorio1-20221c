@@ -13,6 +13,7 @@ Para determinar el fin de la carga de datos de empleados se ingresa un número d
 Nota: No habrá más de una persona con el mayor sueldo.
 */
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main(){
@@ -23,6 +24,13 @@ int main(){
     // B
     float sumaSueldos = 0;
     float promedioGeneral;
+    // C
+    int cantEmpleados40 = 0;
+    float sumaSueldos40 = 0;
+    float promedioSueldo40;
+    // D
+    float maxSueldo = 0;
+    int maxEdad, maxLegajo; // Edad del empleado con mayor sueldo y Legajo del empleado con mayor sueldo
 
     cout << "Legajo: ";
     cin >> legajo;
@@ -37,7 +45,17 @@ int main(){
         // B
         sumaSueldos += sueldo;
         // C
+        if (edad > 40){
+            cantEmpleados40++;
+            sumaSueldos40 += sueldo;
+        }
         // D
+        if (sueldo > maxSueldo){
+            maxSueldo = sueldo;
+            maxEdad = edad;
+            maxLegajo = legajo;
+        }
+
         cout << "---------------------------" << endl;
         cout << "Legajo: ";
         cin >> legajo;
@@ -48,10 +66,18 @@ int main(){
     cout << endl << "PUNTO B" << endl;
     if (cantEmpleados != 0){
         promedioGeneral = sumaSueldos / cantEmpleados;
-        cout << "El promedio general de sueldos es: $ " << promedioGeneral << endl;
+        cout << "El promedio general de sueldos es: $ " << fixed << setprecision(2) << promedioGeneral << endl;
     }
 
     cout << endl << "PUNTO C" << endl;
+    if (cantEmpleados40 != 0){
+        promedioSueldo40 = sumaSueldos40 / cantEmpleados40;
+        cout << "El promedio de sueldos de empleados >40 es: $" << promedioSueldo40 << endl;
+    }
+
     cout << endl << "PUNTO D" << endl;
+    cout << "Sueldo máximo: " << maxSueldo << endl;
+    cout << "Edad: " << maxEdad << endl;
+    cout << "Legajo: " << maxLegajo << endl;
     return 0;
 }
