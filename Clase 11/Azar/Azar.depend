@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1653691810 source:/home/angel/UTN/Github/laboratorio1-20221c/Clase 11/Azar/main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
