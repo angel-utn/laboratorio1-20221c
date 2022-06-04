@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1654300796 source:e:\projects\c++\funciones_vectores\main.cpp
+	<iostream>
+	<string>
+	"funciones.h"
+
+1654300785 e:\projects\c++\funciones_vectores\funciones.h
+
+1654300758 source:e:\projects\c++\funciones_vectores\funciones.cpp
+	<iostream>
+	<string>
+	"funciones.h"
+
